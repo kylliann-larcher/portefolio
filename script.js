@@ -29,18 +29,17 @@ document.addEventListener("DOMContentLoaded", () => {
             behavior: "smooth"
         });
     });
-
-
+    // Chart.js (graphique des projets)
     const ctx = document.getElementById('projectChart');
     if (ctx) {
         new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ['Python', 'R', 'SQL', 'Power BI', 'HTML/CSS'],
+                labels: ['Python', 'R', 'SQL', 'Power BI/Query', 'HTML/CSS'],
                 datasets: [{
                     label: 'Nombre de projets',
-                    data: [6, 2, 2, 2, 3],
-                    backgroundColor: ['#4CAF50', '#2196F3', '#FF9800', '#9C27B0', '#00BCD4'],
+                    data: [20, 4, 8, 10, 2],
+                    backgroundColor: ['#FFD300', '#2196F3', '#FF9800', '#9C27B0', '#00BCD4'],
                     borderWidth: 1
                 }]
             },
