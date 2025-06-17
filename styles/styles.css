@@ -152,7 +152,7 @@ nav a:hover {
 }
 
 .skills-block {
-    width: 300px;
+    width: 250px;
     background-color: #1a1a2e;
     padding: 2rem;
     border-radius: 10px;
@@ -277,4 +277,16 @@ footer {
 
 .profile-pic:hover {
     transform: scale(1.05);
+}
+
+.chart-container {
+  max-width: 100;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.chart-container canvas {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
 }
