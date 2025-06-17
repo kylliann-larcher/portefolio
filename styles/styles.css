@@ -252,7 +252,7 @@ footer {
         flex-direction: column;
     }
     .skills-block {
-        width: 100%;
+        width: 90%;
     }
     nav ul {
         flex-direction: column;
@@ -280,13 +280,15 @@ footer {
 }
 
 .chart-container {
-  max-width: 100;
+  width: 100%;
+  max-width: 600px;   /* Limite la largeur */
+  max-height: 400px;  /* Limite la hauteur */
   margin: 0 auto;
-  width: 80%;
+  overflow: hidden;
 }
 
 .chart-container canvas {
   width: 100% !important;
-  height: auto !important;
+  height: 400px !important;  /* Fixe la hauteur exacte du canvas */
   display: block;
 }
