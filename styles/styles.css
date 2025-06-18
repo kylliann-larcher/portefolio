@@ -295,18 +295,19 @@ footer {
 .chart-container {
   width: 100%;
   max-width: 500px;   /* Limite la largeur */
+  min-width: 280px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
 .chart-container canvas {
   width: 100% !important;
+  min-height: 250px !important; /* Force une lisibilité sur petit écran */
+  max-height: 400px !important; /* Évite qu'il s'étire trop */
   height: auto !important;
-  max-height: 300px;  /* Fixe la hauteur exacte du canvas */
   display: block;
-}
-.chart-container canvas {
   transition: all 0.3s ease-in-out;
+  
 }
 #projects {
   opacity: 1 !important;
