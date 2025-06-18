@@ -172,10 +172,11 @@ nav a:hover {
 }
 
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
 }
+
 
 .project-card {
     background-color: #1a1a2e;
@@ -265,6 +266,18 @@ footer {
         font-size: 2rem;
     }
 }
+
+@media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .project-card {
+    padding: 1rem;
+  }
+}
+
 .profile-pic {
     width: 250px;
     height: 250px;
@@ -281,14 +294,20 @@ footer {
 
 .chart-container {
   width: 100%;
-  max-width: 600px;   /* Limite la largeur */
-  max-height: 400px;  /* Limite la hauteur */
+  max-width: 500px;   /* Limite la largeur */
   margin: 0 auto;
-  overflow: hidden;
+  padding: 0 1rem;
 }
 
 .chart-container canvas {
   width: 100% !important;
-  height: 400px !important;  /* Fixe la hauteur exacte du canvas */
+  height: auto !important;
+  max-height: 300px;  /* Fixe la hauteur exacte du canvas */
   display: block;
+}
+.chart-container canvas {
+  transition: all 0.3s ease-in-out;
+}
+#projects {
+  opacity: 1 !important;
 }

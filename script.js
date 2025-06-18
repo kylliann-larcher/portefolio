@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 labels: ['Python', 'R', 'SQL', 'Power BI/Query', 'HTML/CSS'],
                 datasets: [{
                     label: 'Nombre de projets',
-                    data: [20, 4, 8, 10, 2],
+                    data: [16, 4, 8, 10, 2],
                     backgroundColor: ['#FFD300', '#2196F3', '#FF9800', '#9C27B0', '#00BCD4'],
                     borderWidth: 1
                 }]
