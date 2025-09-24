@@ -1,14 +1,27 @@
-# Portfolio - My Skills and Ambitions 🚀
+# Portfolio — Kylliann Larcher
 
-Welcome to my interactive portfolio, designed to showcase my skills, achievements, and goals. 🎯 </br>
-This innovative project is a showcase of my journey, combining modern design and web technologies. 💻✨
+Version optimisée (HTML/CSS/JS) — prête pour déploiement (Vercel/Netlify).
 
-## What you'll find here 👉
+## Points clés
+- ✅ Hero modernisé + double CTA
+- ✅ Cartes projets avec tags + états hover
+- ✅ Dark/Light mode (persistant)
+- ✅ Meta SEO + Open Graph
+- ✅ Performances : images WebP + lazy loading
+- ✅ Accessibilité : skip link, aria-labels
 
-A clear and engaging introduction to my profile. </br>
-My key projects, highlighting my technical expertise and creativity. </br>
-My professional goals in the fields of computer science and artificial intelligence. </br>
-</br>
-📈 Goal: To inspire, connect, and demonstrate my ability to tackle ambitious challenges. </br>
-</br>
-Explore, discover, and feel free to share your feedback with me via [LinkedIn](https://www.linkedin.com/in/axel-achart/) ! 🌐
+## Lancer en local
+Ouvrez `index.html` dans votre navigateur.
+(Optionnel) Servez avec un petit serveur HTTP :
+```bash
+python -m http.server 8080
+```
+
+## Déploiement
+- **Vercel** : importez le repo → project type *Other*, output `index.html`.
+- **Netlify** : *New site from Git* → *drag & drop* du dossier.
+
+## Personnalisation
+- Remplacez `img/profile.webp` par votre photo (380×380 conseillé).
+- Éditez les projets (liens GitHub/Demo) dans `index.html`.
+- Ajustez la palette dans `styles/styles.css` (variables CSS).

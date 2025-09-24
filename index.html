@@ -1,197 +1,296 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kylliann LARCHER - Portfolio</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="imgportfolio/icon_logo.png" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kylliann Larcher — Portfolio Data & IA</title>
+  <meta name="description" content="Kylliann Larcher — Étudiant Bachelor IT Data & IA. Futur alternant Analyste & Traitement de Données d’Essai chez TechnicAtome. Projets : data, ML, traitement du signal, visualisation.">
+  <meta property="og:title" content="Kylliann Larcher — Portfolio Data & IA">
+  <meta property="og:description" content="Projets Data/IA, traitement du signal, visualisation, outils Python.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
 
 </head>
-
 <body>
-    <header>
-        <div class="hero">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Kylliann LARCHER</h1>
-                    <p>Étudiant en IA & Data Science | Alternance dès Octobre 2025</p>
-                      <a href="https://laplateforme.io/bachelor-it/developpeur-en-intelligence-artificielle/" target="_blank" style="color: #00bfff; text-decoration: none;">
-                          Étudiant à La Plateforme_
-                      </a>
-                    </p>
-                    <a href="#projects" class="btn">Voir mes projets</a>
-                </div>
-                <img src="imgportfolio/profile.png" alt="Photo de Kylliann" class="profile-pic">
-            </div>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header class="site-header container">
+    <div class="brand">
+      <span class="logo">KL</span>
+      <strong>Kylliann Larcher</strong>
+    </div>
+    <nav class="nav">
+      <a href="#projects">Projets</a>
+      <a href="#skills">Compétences</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle" aria-label="Basculer le thème">🌓</button>
+    </nav>
+  </header>
+
+  <section class="hero container">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <h1>Étudiant Data & IA</h1>
+        <p class="role">Alternant — Analyste & Traitement de Données d’Essai à <a href="https://www.technicatome.com/" target="_blank" rel="noopener noreferrer">TechnicAtome</a></p>
+        <p class="sub">J’analyse et valorise des données d’essai pour aider les équipes à décider plus vite et mieux.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn">Voir mes projets</a>
+          <a href="https://drive.google.com/file/d/1zrbZZ27VoGCTMLfP-KUdMWd26AX4X3uR/view?usp=sharing" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Télécharger mon CV</a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#about">À PROPOS</a></li>
-                <li><a href="#skills">COMPÉTENCES</a></li>
-                <li><a href="#projects">PROJETS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>
+      </div>
+      <div class="hero-media">
+        <img src="img/profile.webp" alt="Photo de Kylliann" class="profile-pic" width="300" height="300" loading="eager" onerror="this.style.display='none'">
+      </div>
+    </div>
+  </section>
 
-    <main>
-        <section id="about" class="section">
-            <h2>À PROPOS</h2>
-            <p>Étudiant en Bachelor IT à La Plateforme (Marseille), passionné par l’IA, je développe des solutions intelligentes pour transformer les données en décisions. Mon objectif : contribuer activement à des projets IA innovants en entreprise.</p>
-        </section>
-
-        <section id="skills" class="section">
-            <h2>COMPÉTENCES</h2>
-            <div class="skills-container">
-                <div class="skills-block">
-                    <h3>Techniques</h3>
-                    <ul class="skills-list">
-                        <li><strong>Langages :</strong> Python, JavaScript, HTML, CSS</li>
-                        <li><strong>Data Science & IA :</strong> Machine Learning, Deep Learning (scikit-learn, TensorFlow)</li>
-                        <li><strong>Analyse de données :</strong> SQL, NoSQL, Pandas, Matplotlib, Power BI</li>
-                        <li><strong>Développement :</strong> Programmation orientée objet (POO), modélisation, structuration modulaire</li>
-                        <li><strong>Outils & workflow :</strong> GitHub, Trello, Visual Studio Code, Jupyter Notebook</li>
-                    </ul>
-
-                </div>
-                <div class="skills-block">
-                    <h3>Soft Skills</h3>
-                    <ul class="skills-list">
-                        <li>Curieux et autonome</li>
-                        <li>Goût de l’apprentissage continu</li>
-                        <li>Esprit d'équipe</li>
-                        <li>Résolution de problèmes</li>
-                        <li>Adaptabilité</li>
-                        <li>Rigueur</li>
-                        <li>Esprit d’analyse</li>
-                        <li>Capacité à prioriser</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+  <main id="main" class="container">
+    <section id="projects" class="section">
+      <h2>Projets à la <a href="http://www.laplateforme.io">Plateforme</a>_</h2>
+      <div class="project-grid">
         
-        <section id="stats" class="section">
-          <h2>Statistiques</h2>
-          <div class="chart-container">
-          <canvas id="projectChart"></canvas>
+        <article class="card" style="opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s;">
+          <header>
+            <h3>Amazing Mazes</h3>
+            <ul class="tags">
+              <li>Python</li>
+              <li>Algorithmes</li>
+              <li>Jeu</li>
+            </ul>
+          </header>
+          <p>Génération et résolution de labyrinthes avec interface graphique interactive. Plusieurs algorithmes, export d’images, et modes de jeu inclus.</p>
+          <div class="actions">
+            <a class="btn small" href="https://github.com/kylliann-larcher/amazing-mazes" target="_blank" rel="noopener">GitHub</a>
+            <!-- Ajoute un lien Demo si tu as une démo en ligne, sinon retire ce bouton -->
           </div>
-        </section>
+        </article>
+        <article class="card">
+  <header>
+    <h3>Zeno Paradoxes</h3>
+    <ul class="tags">
+      <li>Python</li>
+      <li>Mathématiques</li>
+      <li>Visualisation</li>
+    </ul>
+  </header>
+  <p>Exploration interactive des paradoxes de Zénon à travers des animations et des visualisations. Ce projet permet de mieux comprendre les concepts d’infini, de limites et de mouvement en mathématiques.</p>
+  <div class="actions">
+    <a class="btn small" href="https://github.com/axel-achart/zeno-paradoxes" target="_blank" rel="noopener">GitHub</a>
+    <!-- Ajoute un lien Demo si tu as une démo en ligne, sinon retire ce bouton -->
+  </div>
+</article>
+<article class="card">
+  <header>
+    <h3>Netflix Insights</h3>
+    <ul class="tags">
+      <li>Python</li>
+      <li>Data Viz</li>
+      <li>Analyse</li>
+    </ul>
+  </header>
+  <p>Analyse et visualisation interactive de données Netflix : tendances, recommandations, exploration des films et séries selon différents critères.</p>
+  <div class="actions">
+    <a class="btn small" href="https://github.com/axel-achart/netflix-insights" target="_blank" rel="noopener">GitHub</a>
+    <!-- Ajoute un lien Demo si tu as une démo en ligne, sinon retire ce bouton -->
+  </div>
+</article>
+<article class="card">
+  <header>
+    <h3>Lingua Franca</h3>
+    <ul class="tags">
+      <li>Python</li>
+      <li>NLP</li>
+      <li>Analyse de texte</li>
+    </ul>
+  </header>
+  <p>Outil d’analyse linguistique pour explorer, comparer et visualiser des textes en français. Extraction de statistiques, visualisations et traitement automatique du langage.</p>
+  <div class="actions">
+    <a class="btn small" href="https://github.com/axel-achart/lingua-franca" target="_blank" rel="noopener">GitHub</a>
+    <!-- Ajoute un lien Demo si tu as une démo en ligne, sinon retire ce bouton -->
+  </div>
+</article>
+<article class="card">
+  <header>
+    <h3>Project R1 Name</h3>
+    <ul class="tags">
+      <li>Python</li>
+      <li>Data Science</li>
+      <li>Exploration</li>
+    </ul>
+  </header>
+  <p>Projet d’exploration et d’analyse de données avec Python. Visualisations, extraction d’insights et manipulation de jeux de données variés.</p>
+  <div class="actions">
+    <a class="btn small" href="https://github.com/axel-achart/Project_R1_Name" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</article>
+<article class="card">
+  <header>
+    <h3>PALS Analysis</h3>
+    <ul class="tags">
+      <li>Python</li>
+      <li>Analyse</li>
+      <li>Data Science</li>
+    </ul>
+  </header>
+  <p>Analyse et visualisation de données PALS (Positron Annihilation Lifetime Spectroscopy) : extraction de paramètres, traitement de signaux et interprétation scientifique.</p>
+  <div class="actions">
+    <a class="btn small" href="https://github.com/axel-achart/pals-analysis" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</article>
+<article class="card">
+  <header>
+    <h3>Dr Death</h3>
+    <ul class="tags">
+      <li>Python</li>
+      <li>Data Science</li>
+      <li>Analyse</li>
+    </ul>
+  </header>
+  <p>Analyse de données médicales et exploration de cas cliniques autour du phénomène "Dr Death". Visualisations, extraction d’insights et réflexion sur l’éthique médicale.</p>
+  <div class="actions">
+    <a class="btn small" href="https://github.com/axel-achart/dr-death" target="_blank" rel="noopener">GitHub</a>
+    <!-- Ajoute un lien Demo si tu as une démo en ligne, sinon retire ce bouton -->
+  </div>
+</article>
+<article class="card">
+  <header>
+    <h3>Sudoku Solver</h3>
+    <ul class="tags">
+      <li>Python</li>
+      <li>Algorithmes</li>
+      <li>Résolution</li>
+    </ul>
+  </header>
+  <p>Application de résolution automatique de grilles de Sudoku : algorithmes de backtracking, interface utilisateur simple et visualisation étape par étape de la solution.</p>
+  <div class="actions">
+    <a class="btn small" href="https://github.com/kylliann-larcher/Sudoku-solver" target="_blank" rel="noopener">GitHub</a>
+    <!-- Ajoute un lien Demo si tu as une démo en ligne, sinon retire ce bouton -->
+  </div>
+</article>
+<article class="card">
+  <header>
+    <h3>Budget Buddy</h3>
+    <ul class="tags">
+      <li>Python</li>
+      <li>Gestion</li>
+      <li>Finance</li>
+    </ul>
+  </header>
+  <p>Application de gestion de budget personnel : suivi des dépenses et revenus, visualisations interactives, et outils d’analyse pour mieux gérer ses finances au quotidien.</p>
+  <div class="actions">
+    <a class="btn small" href="https://github.com/kylliann-larcher/Budget_buddy" target="_blank" rel="noopener">GitHub</a>
+    <!-- Ajoute un lien Demo si tu as une démo en ligne, sinon retire ce bouton -->
+  </div>
+</article>
+<article class="card">
+  <header>
+    <h3>Projet Pendu</h3>
+    <ul class="tags">
+      <li>Python</li>
+      <li>Jeu</li>
+      <li>Interface</li>
+    </ul>
+  </header>
+  <p>Jeu du pendu développé en Python : interface utilisateur simple, gestion des scores et choix de mots aléatoires pour jouer seul ou à plusieurs.</p>
+  <div class="actions">
+    <a class="btn small" href="https://github.com/kylliann-larcher/Projet_pendu" target="_blank" rel="noopener">GitHub</a>
+    <!-- Ajoute un lien Demo si tu as une démo en ligne, sinon retire ce bouton -->
+  </div>
+</article>
+<article class="card">
+  <header>
+    <h3>Calculator</h3>
+    <ul class="tags">
+      <li>Python</li>
+      <li>Calculatrice</li>
+      <li>Interface</li>
+    </ul>
+  </header>
+  <p>Application de calculatrice développée en Python : opérations de base, interface utilisateur intuitive et gestion des erreurs pour faciliter les calculs quotidiens.</p>
+  <div class="actions">
+    <a class="btn small" href="https://github.com/kylliann-larcher/calculator" target="_blank" rel="noopener">GitHub</a>
+    <!-- Ajoute un lien Demo si tu as une démo en ligne, sinon retire ce bouton -->
+  </div>
+</article>
+<article class="card">
+  <header>
+    <h3>Hanoi Tower</h3>
+    <ul class="tags">
+      <li>Python</li>
+      <li>Algorithmes</li>
+      <li>Jeu</li>
+    </ul>
+  </header>
+  <p>Simulation et résolution du jeu des tours de Hanoï : visualisation des étapes, algorithme récursif et interface interactive pour comprendre ce célèbre problème mathématique.</p>
+  <div class="actions">
+    <a class="btn small" href="https://github.com/kylliann-larcher/hanoi-tower" target="_blank" rel="noopener">GitHub</a>
+    <!-- Ajoute un lien Demo si tu as une démo en ligne, sinon retire ce bouton -->
+  </div>
+</article>
+      </div>
+    </section>
 
-        <section id="projects" class="section">
-            <h2>PROJETS</h2>
-            <div class="projects-grid">
+    <section id="personal-project" class="section">
+      <h2>Projet personnel</h2>
+      <div class="project-grid">
+        <article class="card">
+          <header>
+            <h3>IHM TechnicAtome Demo</h3>
+            <ul class="tags">
+              <li>Python</li>
+              <li>Interface</li>
+              <li>Visualisation</li>
+            </ul>
+          </header>
+          <p>Interface graphique de démonstration pour la visualisation et l’analyse de données d’essai, développée pour TechnicAtome.</p>
+          <div class="actions">
+            <a class="btn small" href="https://github.com/kylliann-larcher/IHM_Technic_Atome_demo" target="_blank" rel="noopener">GitHub</a>
+            <!-- Ajoute un lien Demo si tu as une démo en ligne, sinon retire ce bouton -->
+          </div>
+        </article>
+      </div>
+    </section>
 
-              <div class="project-card">
-                <h3>Project R1 | Analyse du dataset Iris en R</h3>
-                <p>Exploration du dataset Iris avec R : nettoyage, visualisation avec ggplot2, statistiques descriptives et séparation des espèces.  
-                Utilisation de RStudio, dplyr et ggplot2 pour structurer et interpréter les données.</p>
-                <a href="https://github.com/axel-achart/Project_R1_Name" class="project-link" target="_blank">Voir sur GitHub</a>
-              </div>
+    <section id="skills" class="section">
+      <h2>Compétences</h2>
+      <ul class="skills">
+        <li>Python</li><li>Pandas</li><li>Scikit‑learn</li><li>Signal Processing</li><li>Data Viz</li><li>SQL</li><li>Git</li><li>R</li><li>Flask</li><li>VScode</li>
+      </ul>
+    </section>
 
-                <div class="project-card">
-                  <h3>Palworld Analysis | Data Exploration</h3>
-                  <p>Analyse de données issues du jeu Palworld avec Python et Pandas.  
-                  Nettoyage, visualisation (Matplotlib, Seaborn) et extraction d’insights sur les créatures, types, forces et faiblesses.</p>
-                  <a href="https://github.com/axel-achart/pals-analysis" class="project-link" target="_blank">Voir sur GitHub</a>
-                </div>
- 
-              <div class="project-card">
-                <h3>Dr Death - Dashboard d'analyse sur Power BI</h3>
-                <p>Dashboard Power BI sur les données du Dr Harold Shipman : nettoyage, analyse statistique et visualisation d’insights clés.</p>
-                <a href="https://github.com/axel-achart/dr-death.git" target="_blank" class="project-link">Voir sur GitHub</a>
-              </div>  
+    <section id="timeline" class="section">
+      <h2 style="opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s;">Parcours</h2>
+      <ol class="timeline">
+        <li>
+          <span class="time">2025 → 2027</span>
+          <div class="content"><strong>Alternance</strong> — Analyste &amp; Traitement de Données d’Essai — TechnicAtome</div>
+        </li>
+        <li>
+          <span class="time">2024 → 2026</span>
+          <div class="content"><strong>Bachelor IT — Data &amp; IA</strong> — La Plateforme_</div>
+        </li>
+        <li>
+          <span class="time">2023 → 2024</span>
+          <div class="content"><strong>Employé polyvalent</strong> — Magaloc</div>
+        </li>
+      </ol>
+    </section>
 
-              <div class="project-card">
-                <h3>Lingua Franca | Traducteur multilingue</h3>
-                <p>Application Flask connectée à l’API LibreTranslate. Interface intuitive avec détection automatique de la langue et affichage instantané des traductions.</p>
-                <a href="https://github.com/axel-achart/lingua-franca" class="project-link" target="_blank">Voir sur GitHub</a>
-              </div>
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Ouvert aux échanges : projets, collaborations, opportunités.</p>
+      <div class="contact-links">
+        <a href="mailto:kylliann.larcher@laplateforme.io" class="btn btn-outline" aria-label="Envoyer un e‑mail">Email</a>
+        <a href="https://www.linkedin.com/in/kylliann-larcher" target="_blank" rel="noopener" class="btn">LinkedIn</a>
+        <a href="https://github.com/kylliann-larcher" target="_blank" rel="noopener" class="btn">GitHub</a>
+      </div>
+    </section>
+  </main>
 
-              <div class="project-card">
-                <h3>Sudoku Solver</h3>
-                <p>Résolution de Sudoku avec backtracking en Python. Utilisation de la POO et des structures de contrôle.</p>
-                <a href="https://github.com/kylliann-larcher/Sudoku-solver" target="_blank" class="project-link">Voir sur GitHub</a>
-              </div>
-          
-              <div class="project-card">
-                <h3>Sorting Algorithms</h3>
-                <p>Implémentation et comparaison d’algorithmes de tri classiques en Python. Visualisation incluse.</p>
-                <a href="https://github.com/kylliann-larcher/sorting-algorithms" target="_blank" class="project-link">Voir sur GitHub</a>
-              </div>
-          
-              <div class="project-card">
-                <h3>Budget Buddy</h3>
-                <p>Application de gestion financière avec graphiques, analyse de données et back-end sécurisé.</p>
-                <a href="https://github.com/kylliann-larcher/Budget_buddy" target="_blank" class="project-link">Voir sur GitHub</a>
-              </div>
-          
-              <div class="project-card">
-                <h3>Poke API</h3>
-                <p>Application Python qui interagit avec l'API Pokémon pour afficher les infos des créatures.</p>
-                <a href="https://github.com/kylliann-larcher/Poke_API" target="_blank" class="project-link">Voir sur GitHub</a>
-              </div>
-          
-              <div class="project-card">
-                <h3>Projet Pendu</h3>
-                <p>Jeu du pendu développé en Python avec système de score et gestion des mots.</p>
-                <a href="https://github.com/kylliann-larcher/Projet_pendu" target="_blank" class="project-link">Voir sur GitHub</a>
-              </div>
-          
-              <div class="project-card">
-                <h3>Calculator</h3>
-                <p>Calculatrice Python avec historique et gestion des erreurs.</p>
-                <a href="https://github.com/kylliann-larcher/calculator" target="_blank" class="project-link">Voir sur GitHub</a>
-              </div>
-          
-              <div class="project-card">
-                <h3>runtrack-BDD-python</h3>
-                <p>Scripts de base de données en Python avec MySQL : requêtes, modèles, analyse de données.</p>
-                <a href="https://github.com/kylliann-larcher/runtrack-BDD-python" target="_blank" class="project-link">Voir sur GitHub</a>
-              </div>
-          
-              <div class="project-card">
-                <h3>runtrack-python-poo</h3>
-                <p>Exercices avancés sur la programmation orientée objet en Python. Classes, héritage, encapsulation.</p>
-                <a href="https://github.com/kylliann-larcher/runtrack-python-poo" target="_blank" class="project-link">Voir sur GitHub</a>
-              </div>
-
-              <div class="project-card">
-                <h3>Netflix Insights - Analyse de données</h3>
-                <p>Exploration des données Netflix 2021 avec Python et Pandas : nettoyage, visualisations interactives, extraction d’insights stratégiques.</p>
-                <a href="https://github.com/axel-achart/netflix-insights.git" target="_blank" class="project-link">Voir sur GitHub</a>
-              </div>
-              
-            </div>
-          </section>
-
-        <section id="contact" class="section">
-            <h2>CONTACT</h2>
-            <div class="contact-buttons">
-                <a href="https://github.com/kylliann-larcher" class="contact-btn" target="_blank">
-                    <img src="imgportfolio/logo_github_blue.png" alt="GitHub">
-                </a>
-                <a href="https://www.linkedin.com/in/kylliann-larcher" class="contact-btn" target="_blank">
-                    <img src="imgportfolio/logo_linkedin_blue.png" alt="LinkedIn">
-                </a>
-                <a href="docs/CV_Kylliann_Larcher.pdf" download class="contact-btn" target="_blank">
-                    <img src="imgportfolio/logo_cv_blue.png" alt="CV">
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 - Kylliann LARCHER. Tous droits réservés.</p>
-    </footer>
-
-    <script src="script.js"></script>
-    <button id="scrollToTop">▲</button>
+  <footer class="site-footer container">
+    <small>© 2025 Kylliann Larcher — Data & IA</small>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
